@@ -7,7 +7,8 @@
 <link href="https://cdn.jsdelivr.net/gh/iglake/cssjs@{{page.cssrel}}/css/style.css" rel="stylesheet" type="text/css"/>
 {% else %}
 <script src="http://127.0.0.1:8088/GITrepo/iglake/cssjs/js/src/favicon.js"></script>
-<link href="https://cdn.statically.io/gh/iglake/cssjs/v{{page.cssrel}}/css/style.css" rel="stylesheet" type="text/css">
+<!--link href="https://cdn.statically.io/gh/iglake/cssjs/v{{page.cssrel}}/css/style.css" rel="stylesheet" type="text/css"-->
+<link href="http://127.0.0.1:8088/GITrepo/iglake/cssjs/css/style.css" rel="stylesheet" type="text/css">
 {% endif %}
 <link href="style.css" type="text/css" rel="stylesheet"/>
 </head><body>
@@ -18,7 +19,8 @@ console.log('username: ',username)
 </script>
 <div class="first content">
 <h2>{{page.title}} </h2>
-{{site.name}} : {{page.description}}
+{{page.description}}
+-- {{site.name}}
 </div>
 
 {{content}}
