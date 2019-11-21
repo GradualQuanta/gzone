@@ -1,0 +1,21 @@
+---
+bgimg: bg-cijif.png
+---
+body {
+{% if jekyll.environment == 'production' %}
+  background-image: URL(https://cloudflare-ipfs.com/ipfs/{{site.data.bgqm.qm}}/{{page.bgimg}});
+{% else %}
+{% if page.bgimg %}
+  background-image: URL(http://127.0.0.1:8080/ipfs/{{site.data.bgqm.qm}}/{{page.bgimg}});
+{% endif %}
+{% endif %}
+  background-size: cover;
+
+}
+.first {
+ color: rgb(210,220,240);
+}
+.badges {
+ margin-top: 22px;
+ bottom: 0;
+}

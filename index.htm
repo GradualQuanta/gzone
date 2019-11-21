@@ -1,22 +1,18 @@
 ---
+layout: home
 framaid: gradualz-pad
-jsrelease: 1.5
-cssrel: 1.4
+source: http://mensuel.framapad.org/p/gradualz-pad
+jsrelease: 1.7
+cssrel: 1.8.3
+title: The GZone
+description: 'GZone: everywhere the <a href="https://gcoin.tk">gcoin</a> is used'
 ---
-<!DOCTYPE html><html><head>
-<meta http-equiv="Access-Control-Allow-Origin" content="{{ site.url }}"/>
-<meta charset="utf8">
-<!--
- vim: nospell
-<link href="https://cdn.statically.io/gh/iglake/cssjs/master/css/style.css" rel="stylesheet" type="text/css">
--->
-<link href="https://www.google.com/s2/favicons?domain=framapad.org" rel="shortcut icon" type="image/png" media="all">
-<link href="https://cdn.jsdelivr.net/gh/iglake/cssjs@v{{ page.cssrel }}/css/style.css" rel="stylesheet" type="text/css">
-<link href="style.css" rel="stylesheet" type="text/css" media="all">
-</head><body>
+<script> var framaid = '{{page.framaid}}'; </script>
 <div id="rendered" class=content></div>
 <br>
-<div class="content" style="margin-top: 108px;">
+<div class=content> about: <a href=about.htm>gradual change movement</a> </div>
+<br>
+<div class="content"style="margin-top: 8px;">
 <div id=panel><!-- ---------------------------------------------- -->
 To edit this page 
 use
@@ -34,9 +30,6 @@ this web page.
 
 </div>
 </div>
-
-<br>source: <a href="#" class=include>file</a>.
- made w/ <a href="{{ framaid }}" target=_blank class=frama>♡</a>.
 
 <!-- ------------------------------------------------------------ -->
 {% if jekyll.environment != 'production' %}
